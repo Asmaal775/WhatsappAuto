@@ -13,7 +13,7 @@ while True :
     print('Teeest Looop')
     CurrentTime = datetime.now().time()
     Actual_Time = CurrentTime.strftime("%H:%M:%S")
-    Static_Time = '20:27:00'
+    Static_Time = '09:27:00'
     if (Actual_Time == Static_Time) :
         print('Teeest')
         options = Options()
@@ -28,7 +28,7 @@ while True :
         driver.maximize_window()
         driver.get('https://web.whatsapp.com')
         time.sleep(20)
-        driver.find_element_by_xpath("//*[@title='M7md']").click()
+        driver.find_element_by_xpath("//*[@title='Mom']").click()
         #driver.find_element_by_class_name('_1awRl')
         excuse = ['هلا يمه أنا تمام انتي كيفك', 'هلا والله', 'هلا أنا في الدوام', 'هلا بكلمك اذا خلصت', 'صباح الخير انا في الدوام']
         WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.XPATH,'//*[@id="main"]/footer/div[1]/div[2]/div/div[2]'))).send_keys(random.choice(excuse))
